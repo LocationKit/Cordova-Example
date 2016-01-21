@@ -1,0 +1,87 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"LocationKit\"><param name=\"android-package\" value=\"cordova.locationkit.LocationKit\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-locationkit": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-locationkit/www/locationkit.js",
+            "id": "cordova-locationkit.LocationKit",
+            "pluginId": "cordova-locationkit",
+            "clobbers": [
+                "LocationKit"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+            "id": "org.apache.cordova.splashscreen.SplashScreen",
+            "pluginId": "org.apache.cordova.splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-locationkit": "1.0.6",
+        "cordova-plugin-whitelist": "1.0.0",
+        "org.apache.cordova.geolocation": "0.3.12",
+        "org.apache.cordova.splashscreen": "1.0.0"
+    }
+}

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="locationkit-3.0.11-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/socialradar/locationkit/3.0.11-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/socialradar/locationkit/3.0.11-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

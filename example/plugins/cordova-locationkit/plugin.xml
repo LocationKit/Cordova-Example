@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-locationkit" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<name>LocationKit</name><engines>
+<engine name="cordova" version="&gt;=3.8.0" /></engines>
+<description>
+        Plugman compatible wrapper for LocationKit.
+</description><author>
+        John Fontaine
+        SocialRadar Inc
+</author><keywords>
+        gps, geolocation, ios
+</keywords><license>
+c. 2015 SocialRadar Inc All Rights Reserved
+http://locationkit.io/
+</license>
+<js-module name="LocationKit" src="www/locationkit.js"><clobbers target="LocationKit" /></js-module>
+<platform name="ios">
+	<!--<hook src="scripts/ios/link_framework.sh" type="before_plugin_install" /> -->
+	<info />
+	<config-file parent="/*" target="config.xml">
+		<feature name="LocationKit">
+			<param name="ios-package" value="CDVLocationKit" />
+		</feature>
+	</config-file>
+		<config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist"><string>This app requires background location tracking</string>
+		</config-file>
+		<config-file parent="UIBackgroundModes" target="*-Info.plist"><array><string>location</string></array>
+		</config-file>
+	<source-file src="src/ios/CDVLocationKit.m" />
+	<header-file src="src/ios/CDVLocationKit.h" />
+	<framework autogen="true" src="CoreLocation.framework" />
+	<framework autogen="true" src="MapKit.framework" />
+	<framework custom="true" src="src/ios/Frameworks/LocationKit.framework" />
+</platform>
+<platform name="android">
+	<config-file parent="/*" target="res/xml/config.xml">
+	<feature name="LocationKit">
+		<param name="android-package" value="cordova.locationkit.LocationKit" />
+	</feature></config-file>
+	<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+	<source-file src="src/android/LocationKit.java" target-dir="src/cordova/locationkit" />
+	<framework src="build-extra.gradle" type="gradleReference"  custom="true"  />
+	<framework src="socialradar:locationkit:3.0.10@aar"/>
+</platform>
+</plugin>

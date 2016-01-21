@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-locationkit": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.socialradar.cordova"
+        }
+    },
+    "dependent_plugins": {}
+}

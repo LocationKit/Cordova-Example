@@ -1,0 +1,128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C7C691278D15A073661677A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7C69068EA120963FAB33F46 /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7C69068EA120963FAB33F46 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "../Cordova-Example/example/platforms/ios/CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
+		C7C690BD8161BE3F5C0B7194 /* src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		C7C690FF563A681FF1164F05 /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
+		C7C691B75E8AC7B68B8E0D53 /* www */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		C7C693246006D9D7D82598D1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C7C694DBE0F13FDF81AC1264 /* link_framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = link_framework.sh; path = scripts/ios/link_framework.sh; sourceTree = "<group>"; };
+		C7C6952B1074D2A0D2E55BBB /* Podfile.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; path = Podfile.in; sourceTree = "<group>"; };
+		C7C69B4ED58BABE57C684A94 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C7C6927C4B3305B464DCE421 = {
+			isa = PBXGroup;
+			children = (
+				C7C69E9FB8FB11FCF3682A15 /* Products */,
+				C7C691B75E8AC7B68B8E0D53 /* www */,
+				C7C690FF563A681FF1164F05 /* plugin.xml */,
+				C7C693246006D9D7D82598D1 /* LICENSE */,
+				C7C690BD8161BE3F5C0B7194 /* src */,
+				C7C69B4ED58BABE57C684A94 /* README.md */,
+				C7C69068EA120963FAB33F46 /* CordovaLib.xcodeproj */,
+				C7C6952B1074D2A0D2E55BBB /* Podfile.in */,
+				C7C694DBE0F13FDF81AC1264 /* link_framework.sh */,
+			);
+			sourceTree = "<group>";
+		};
+		C7C69898747FC96D9AEFFA39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7C69621FE9388EFC97D9CAA /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7C69E9FB8FB11FCF3682A15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C7C694DE39A7D1854D5F8574 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C7C69F859AA1FD12EFC76DE3 /* Build configuration list for PBXProject "Cordova-LocationKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7C6927C4B3305B464DCE421;
+			productRefGroup = C7C69E9FB8FB11FCF3682A15 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C7C69898747FC96D9AEFFA39 /* Products */;
+					ProjectRef = C7C69068EA120963FAB33F46 /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C7C69621FE9388EFC97D9CAA /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = C7C691278D15A073661677A8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		C7C698DFD979DD77B27CBA64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos8.4;
+			};
+			name = Debug;
+		};
+		C7C6990825FA72A29A3240EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos8.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7C69F859AA1FD12EFC76DE3 /* Build configuration list for PBXProject "Cordova-LocationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C698DFD979DD77B27CBA64 /* Debug */,
+				C7C6990825FA72A29A3240EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7C694DE39A7D1854D5F8574 /* Project object */;
+}
